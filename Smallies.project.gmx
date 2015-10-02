@@ -5,10 +5,25 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Bald man">
+      <sprite>sprites\spr_baldman_down</sprite>
+      <sprite>sprites\spr_baldman_up</sprite>
+      <sprite>sprites\spr_baldman_right</sprite>
+      <sprite>sprites\spr_baldman_left</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <shaders name="shaders"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\obj_baldman</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
