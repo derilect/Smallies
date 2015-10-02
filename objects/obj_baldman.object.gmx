@@ -25,14 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var alive = true;
-var dest_x;
-var dest_y;
+            <string>isAlive = true;
+destX = x;
+destY = y;
 sprite_index = spr_baldman_down;
 image_speed = 0.1;
 vspeed = 1;
-
-
+isIdle = false;
+idleTime = 2.0;
+timeIdle= 0.0;
+    
 </string>
           </argument>
         </arguments>
@@ -59,7 +61,15 @@ vspeed = 1;
 if(y &gt;= room_height || y &lt;= 0)
     vspeed *= -1;    
 
-y += vspeed;
+if(isIdle)
+{
+    
+}
+    
+if(destX == x)
+{
+    isIdle = true;
+}
 
 </string>
           </argument>
